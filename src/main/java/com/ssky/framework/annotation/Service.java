@@ -5,9 +5,9 @@ import java.lang.annotation.*;
 /**
  * @author YCKJ3275
  */
-@Target({ElementType.FIELD})
+@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface RequestBody {
+public @interface Service {
     String value() default "";
 }

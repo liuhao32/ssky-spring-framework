@@ -8,10 +8,17 @@
 
     <servlet>
         <servlet-name>mvc</servlet-name>
-        <servlet-class>com.ssky.framework.</servlet-class>
+        <servlet-class>com.ssky.framework.webmvc.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contentConfigLocation</param-name>
+            <param-value>application.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>mvc</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
 </web-app>

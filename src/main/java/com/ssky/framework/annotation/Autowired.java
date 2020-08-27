@@ -8,6 +8,6 @@ import java.lang.annotation.*;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface RequestBody {
+public @interface Autowired {
     String value() default "";
 }
